@@ -24,13 +24,13 @@ export default function Sidebar() {
         <SectionNav items={navItems} />
         <a
           href={`mailto:${profile.email}`}
-          className="mt-10 inline-block rounded-full border border-line px-5 py-2 font-mono text-xs uppercase tracking-widest text-ink-dim transition-colors hover:border-accent hover:bg-accent/10 hover:text-accent lg:mt-12"
+          className="mt-6 inline-block rounded-full border border-line px-5 py-2 font-mono text-xs uppercase tracking-widest text-ink-dim transition-colors hover:border-accent hover:bg-accent/10 hover:text-accent lg:mt-12"
         >
           Contact
         </a>
       </div>
 
-      <ul className="mt-8 flex flex-wrap items-center gap-5 lg:mt-0" aria-label="Social links">
+      <ul className="mt-6 flex flex-wrap items-center gap-5 lg:mt-0" aria-label="Social links">
         {links.map(({ label, url }) => (
           <li key={label}>
             <a

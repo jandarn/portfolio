@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div
       id="top"
-      className="mx-auto max-w-[1400px] px-6 py-12 md:px-12 md:py-16 lg:py-0 lg:px-24"
+      className="mx-auto max-w-[1400px] px-6 py-8 md:px-12 md:py-16 lg:py-0 lg:px-24"
     >
       <NetworkBackground />
       <a
@@ -21,7 +21,7 @@ export default function Home() {
       </a>
       <div className="lg:flex lg:justify-between lg:gap-4">
         <Sidebar />
-        <main id="content" className="pt-24 lg:w-[62%] lg:py-24">
+        <main id="content" className="pt-12 lg:w-[62%] lg:py-24">
           <About />
           <Education />
           <Experience />
