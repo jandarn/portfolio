@@ -40,7 +40,7 @@ export interface ExperienceItem {
 export interface EducationItem {
   title: string;
   institution: string;
-  kind: "degree" | "certification";
+  kind: "degree" | "diploma" | "certification";
   url: string | null;
   /** Format: YYYY-MM */
   start: string;
