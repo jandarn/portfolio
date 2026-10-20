@@ -9,11 +9,11 @@ const blueprintGrid =
 export default function Projects() {
   return (
     <Section id="projects" title="Projects">
-      <ul className="grid gap-4 xl:grid-cols-2">
+      <ul className="grid grid-cols-1 gap-4 xl:grid-cols-2">
         {projects.map((project) => (
           <li
             key={project.title}
-            className="group/project xl:last:odd:col-span-2 xl:last:odd:w-[calc(50%-0.5rem)] xl:last:odd:justify-self-center"
+            className="group/project min-w-0 xl:last:odd:col-span-2 xl:last:odd:w-[calc(50%-0.5rem)] xl:last:odd:justify-self-center"
           >
             <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-surface transition-all duration-300 hover:border-accent/50 hover:shadow-[0_0_24px_-8px_var(--color-accent)] motion-safe:hover:-translate-y-0.5">
               {project.image ? (
