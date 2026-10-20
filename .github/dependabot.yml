@@ -4,7 +4,25 @@ updates:
     directory: /
     schedule:
       interval: weekly
+
   - package-ecosystem: npm
     directory: /
     schedule:
       interval: weekly
+    open-pull-requests-limit: 5
+    # Packages that must stay on the same version are bumped together.
+    groups:
+      react:
+        patterns: ["react", "react-dom", "@types/react", "@types/react-dom"]
+      next:
+        patterns: ["next", "eslint-config-next"]
+      tailwind:
+        patterns: ["tailwindcss", "@tailwindcss/*"]
+    # Major upgrades of these are done by hand (@types/node must match the Node in CI).
+    ignore:
+      - dependency-name: typescript
+        update-types: ["version-update:semver-major"]
+      - dependency-name: eslint
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
