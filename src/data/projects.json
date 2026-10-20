@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Multi-account AWS landing zone",
+    "description": "A Terraform account factory that provisions isolated tenant accounts inside an AWS Organization, with Terraform state split by blast radius and centralised policies and auditing.",
+    "repo": "https://github.com/jandarn/terraform-aws-silo-landing-zone",
+    "url": null,
+    "image": null,
+    "visual": "landing-zone",
+    "tags": ["Terraform", "AWS", "AWS Organizations", "IAM"]
+  },
+  {
+    "title": "Documentation service infrastructure",
+    "description": "Reproducible Docker Compose stack for a corporate documentation service: isolated networks, NGINX as the single HTTPS entry point backed by a local CA, LDAP authentication, and Prometheus and Grafana monitoring.",
+    "repo": "https://github.com/jandarn/wikijs-docker",
+    "url": null,
+    "image": null,
+    "visual": "docs-stack",
+    "tags": ["Docker", "NGINX", "TLS", "LDAP", "Prometheus", "Grafana"]
+  },
+  {
+    "title": "Portfolio",
+    "description": "This site: a Next.js static export built and deployed through a GitHub Actions CI/CD pipeline.",
+    "repo": "https://github.com/jandarn/portfolio",
+    "url": null,
+    "image": null,
+    "visual": "cicd",
+    "tags": ["GitHub Actions", "CI/CD", "Next.js"]
+  },
+  {
+    "title": "Hardened container for Claude Code",
+    "description": "Isolated Docker environment for running Claude Code with minimal access to the host: non-root user, no-new-privileges, dropped capabilities and scoped volumes.",
+    "repo": "https://github.com/jandarn/claude-docker",
+    "url": null,
+    "image": null,
+    "visual": "sandbox",
+    "tags": ["Docker", "Linux", "Bash"]
+  }
+]

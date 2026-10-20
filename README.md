@@ -24,7 +24,15 @@ Planning phase: UX first, then UI.
 
 ## Getting Started
 
-Setup instructions will be added once the project is scaffolded.
+```bash
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # static export to ./out
+```
+
+## Content
+
+All content lives in `src/data/*.json` (`profile`, `about`, `experience`, `projects`, `links`). Edit or add entries there; no component changes are needed.
 
 ## License
 

@@ -1,0 +1,12 @@
+{
+  "name": "Jaime Andrés Arnaiz",
+  "title": "Junior Sysadmin / DevOps Engineer",
+  "tagline": "Reproducible, secure and documented infrastructure.",
+  "description": "Portfolio of a junior sysadmin and DevOps engineer.",
+  "email": "hello@jaimeandarn.com",
+  "resumeUrl": null,
+  "availability": {
+    "open": true,
+    "label": "Open to junior sysadmin / DevOps roles"
+  }
+}

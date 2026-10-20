@@ -1,0 +1,40 @@
+[
+  {
+    "role": "Systems Administrator Intern",
+    "company": "Nicolás Correa S.A.",
+    "url": "https://www.nicolascorrea.com",
+    "start": "2026-02",
+    "end": "2026-06",
+    "description": "IT department of an industrial CNC machine manufacturer: upgraded an out-of-support Linux server after previous attempts had failed, and supported day-to-day IT operations.",
+    "tags": ["Linux", "Ubuntu", "Apache", "MySQL", "Bash", "Microsoft 365", "Entra ID", "Active Directory"],
+    "decoration": "/decorations/nicolas-correa.svg",
+    "areas": [
+      {
+        "title": "Server migration",
+        "tasks": [
+          "Upgraded the server hosting the company's IT asset inventory from Ubuntu 20.04 LTS (EOL) to 24.04 LTS, after previous attempts had failed",
+          "Upgraded the asset management application (GLPI) from 10.0.18 to 11.0.7",
+          "Reconfigured the Apache2 virtual hosts and migrated the MySQL database without data loss",
+          "Driven by known vulnerabilities in the unsupported versions, as part of the ISO 27001 preparation; delivered ready for promotion to production"
+        ],
+        "tags": ["Linux", "Ubuntu", "Apache", "MySQL", "GLPI"]
+      },
+      {
+        "title": "IT operations",
+        "tasks": [
+          "Administered Microsoft 365 and Entra ID",
+          "Managed computers in Active Directory with operator permissions",
+          "Supported users and shop-floor CNC software (Siemens, Heidenhain)",
+          "Automated recurring administrative tasks with Bash scripting"
+        ],
+        "tags": ["Microsoft 365", "Entra ID", "Active Directory", "Bash"]
+      },
+      {
+        "title": "Documentation",
+        "tasks": [
+          "Wrote the department's technical documentation and internal procedures to standardise recurring tasks, still in use"
+        ]
+      }
+    ]
+  }
+]
