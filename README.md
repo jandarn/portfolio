@@ -28,7 +28,7 @@ All content lives in `src/data/*.json` (`profile`, `about`, `education`, `experi
 
 ```
 src/
-├── app/          # layout, page, global styles, icon
+├── app/          # layout, page, global styles
 ├── components/   # sections and UI components
 ├── data/         # JSON content
 ├── lib/          # content loaders
