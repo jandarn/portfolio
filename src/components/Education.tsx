@@ -1,7 +1,14 @@
 import Section from "@/components/Section";
 import Tag from "@/components/Tag";
 import { DecorationBadge, DecorationPanel } from "@/components/Decoration";
-import { education, formatRange } from "@/lib/content";
+import { education, formatMonth, formatRange } from "@/lib/content";
+import type { EducationItem } from "@/types/content";
+
+// Certifications show a single date: when they were issued, or Present while pending.
+function dateLabel(item: EducationItem): string {
+  if (item.kind !== "certification") return formatRange(item.start, item.end);
+  return item.end ? formatMonth(item.end) : "Present";
+}
 
 // Masks (not gradient colors) so the neon glow fades together with the line.
 const fadeMask = {
@@ -55,7 +62,7 @@ export default function Education() {
                   }`}
                 />
                 <p className="font-mono text-xs uppercase tracking-wide text-ink-muted">
-                  {formatRange(item.start, item.end)} · {item.kind}
+                  {dateLabel(item)} · {item.kind}
                 </p>
                 <div className="mt-1 flex items-start justify-between gap-4">
                   <h3 className="font-medium text-ink">
