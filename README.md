@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio for a junior Sysadmin / DevOps engineer. A single-page static site with About, Experience, Education, Projects and Contact sections.
+Personal portfolio for a junior Sysadmin. A single-page static site with About, Experience, Education, Projects and Contact sections.
 
 ## Tech Stack
 
