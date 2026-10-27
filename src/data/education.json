@@ -1,22 +1,11 @@
 [
   {
-    "title": "CKA: Certified Kubernetes Administrator",
-    "institution": "CNCF",
-    "kind": "certification",
-    "url": null,
-    "start": "2026-10",
-    "end": null,
-    "description": "Hands-on, performance-based CNCF exam on administering Kubernetes clusters: installation and configuration, workloads and scheduling, services and networking, storage, and troubleshooting. In progress.",
-    "tags": ["Kubernetes", "Linux", "Networking"],
-    "decoration": "/decorations/kubernetes.svg"
-  },
-  {
     "title": "Terraform Associate",
     "institution": "HashiCorp",
     "kind": "certification",
     "url": null,
-    "start": "2026-08",
-    "end": "2026-08",
+    "start": "2026-07",
+    "end": "2026-07",
     "description": "HashiCorp certification on infrastructure as code with Terraform: the core workflow (init, plan, apply, destroy), providers, modules, state management, the configuration language and HCP Terraform basics.",
     "tags": ["Terraform", "IaC"],
     "decoration": "/decorations/terraform.svg"
