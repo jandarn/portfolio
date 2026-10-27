@@ -130,32 +130,9 @@ function Area({
 }
 
 export default function Experience() {
-  const { availability, email } = profile;
-
   return (
     <Section id="experience" title="Experience">
       <ol className="flex flex-col gap-6">
-        {availability.open && (
-          <li className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-dashed border-line-strong px-5 py-4 transition-colors hover:border-accent/60">
-            <div>
-              <p className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-ink-muted">
-                <span aria-hidden className="relative flex h-2 w-2">
-                  <span className="absolute inset-0 rounded-full bg-accent/60 motion-safe:animate-ping" />
-                  <span className="relative h-2 w-2 rounded-full bg-accent shadow-[0_0_6px_var(--color-accent)]" />
-                </span>
-                Next role
-              </p>
-              <p className="mt-1 font-medium text-ink">{availability.label}</p>
-            </div>
-            <a
-              href={`mailto:${email}`}
-              className="rounded-full border border-line px-5 py-2 font-mono text-xs uppercase tracking-widest text-ink-dim transition-all hover:border-accent hover:bg-accent/10 hover:text-accent hover:shadow-[0_0_10px_var(--color-accent)] hover:[text-shadow:0_0_8px_var(--color-accent)]"
-            >
-              Contact
-            </a>
-          </li>
-        )}
-
         {experience.map((job) => {
           const areas = job.areas ?? [];
 
