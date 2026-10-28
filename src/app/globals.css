@@ -14,6 +14,93 @@
   --animate-flow: flow 1s linear infinite;
   --animate-packet: packet 7s linear infinite backwards;
   --animate-node-pulse: node-pulse 4s ease-in-out infinite;
+  --animate-hop: hop 0.9s infinite;
+  --animate-drop: drop 2.4s infinite;
+  --animate-request: request 2.4s ease-in-out infinite;
+  --animate-reveal: reveal 3.2s ease-out infinite;
+
+  /* Jump with a squash on take-off and landing; origin at the feet. */
+  @keyframes hop {
+    0%,
+    100% {
+      transform: translateY(0) scale(1, 1);
+      animation-timing-function: ease-out;
+    }
+    12% {
+      transform: translateY(0) scale(1.08, 0.88);
+      animation-timing-function: ease-out;
+    }
+    45% {
+      transform: translateY(-7px) scale(0.96, 1.05);
+      animation-timing-function: ease-in;
+    }
+    78% {
+      transform: translateY(0) scale(1.06, 0.92);
+      animation-timing-function: ease-out;
+    }
+  }
+
+  /* Falls into place, settles with a small bounce, holds, then fades out to repeat. */
+  @keyframes drop {
+    0% {
+      transform: translateY(-36px);
+      opacity: 0;
+      animation-timing-function: ease-in;
+    }
+    30% {
+      transform: translateY(0);
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    38% {
+      transform: translateY(-3px);
+      animation-timing-function: ease-in;
+    }
+    46%,
+    85% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  }
+
+  /* Like packet, but travels in the first half of the cycle and then waits. */
+  @keyframes request {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    8% {
+      opacity: 1;
+    }
+    45% {
+      transform: translate(var(--dx), var(--dy));
+      opacity: 1;
+    }
+    50%,
+    100% {
+      transform: translate(var(--dx), var(--dy));
+      opacity: 0;
+    }
+  }
+
+  /* Shows for about half of the cycle; animation-delay picks when, so steps light up in order. */
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+    }
+    5%,
+    55% {
+      opacity: 1;
+    }
+    60%,
+    100% {
+      opacity: 0;
+    }
+  }
 
   @keyframes flow {
     to {
