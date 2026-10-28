@@ -3,6 +3,7 @@ const fade = "transition-[stroke,fill] duration-300";
 
 export const line = `stroke-ink/30 ${fade} group-hover/project:stroke-accent/80`;
 export const dashed = `${line} [stroke-dasharray:4_6] group-hover/project:motion-safe:animate-flow`;
+export const edge = `stroke-ink/50 ${fade} group-hover/project:stroke-accent/80`;
 export const faint = "stroke-ink/10";
 export const box = `fill-canvas stroke-ink/40 ${fade} group-hover/project:stroke-accent`;
 export const boxDashed = `${box} [stroke-dasharray:3_3]`;
